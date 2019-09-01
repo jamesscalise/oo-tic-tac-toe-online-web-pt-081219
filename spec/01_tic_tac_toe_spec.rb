@@ -1,5 +1,5 @@
 require_relative '../lib/tic_tac_toe.rb'
-
+require 'pry'
 describe './lib/tic_tac_toe.rb' do
   describe TicTacToe do
     describe '#initialize' do
@@ -306,7 +306,6 @@ describe './lib/tic_tac_toe.rb' do
         game = TicTacToe.new
         board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
         game.instance_variable_set(:@board, board)
-
         expect(game.winner).to be_nil
       end
     end
