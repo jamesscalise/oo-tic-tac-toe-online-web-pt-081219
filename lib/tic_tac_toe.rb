@@ -121,8 +121,7 @@ class TicTacToe
   end
   
   def play
-    notOver = true
-    while notOver == true
+    while !(over?)
       turn
       if over?
         break
